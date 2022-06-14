@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fruit"></p>
+    <h3 id="fruit1"></h3>
+    <section>
+        <!-- sqrt root -->
+        <p id="maps"></p> 
+        <!-- multiply 10 with map  -->
+        <p id="multiply"></p>
+    </section>
+    <script>
+        
+        // const fruits=["banana", "orange", "Apple", "pomegraned"];
+        // fruits.reverse();
+        // document.getElementById('fruit').innerHTML=fruits;
+        // fruits.sort(); 
+        // document.getElementById('fruit1').innerHTML=fruits;
+
+    // var a=10;
+    
+    //map
+    var number=[4,9,16];
+    document.getElementById("maps").innerHTML=number.map(Math.sqrt);
+
+    //multiply by 10 every number
+    const newarr= number.map(myfunction);
+    document.getElementById('multiply').innerHTML=newarr;
+    function myfunction(num){
+        return num*10;
+    }
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
